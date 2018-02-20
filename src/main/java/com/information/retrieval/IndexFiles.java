@@ -56,14 +56,6 @@ public class IndexFiles {
 
 
     static void indexDocs(final IndexWriter writer, Path path) throws IOException {
-//        List listFile = Arrays.asList(path.toFile().list().toString());
-//        listFile.forEach(item -> Integer.parseInt((String) item));
-//        Collections.sort(listFile);
-//        System.out.println("---------------------------------------");
-//        System.out.println("Sorting by filename in ascending order");
-//        for(Object s:listFile){
-//            System.out.println(s);
-//        }
         List<Path> r = new ArrayList<>();
         if (Files.isDirectory(path)) {
             Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
@@ -81,7 +73,6 @@ public class IndexFiles {
             indexDoc(writer, path);
         }
         r.sort(Comparator.comparingDouble(a -> Integer.parseInt(a.getFileName().toString())));
-        System.out.println(r);
         for(Path s:r){
             indexDoc(writer, s);
         }

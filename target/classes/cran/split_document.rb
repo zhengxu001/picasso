@@ -9,7 +9,8 @@ docs.each do |doc|
     if !m.nil?
         m = m.gsub(".W ","").gsub("-"," ").gsub("'s","").gsub(". ","").gsub("*", "").gsub("?", "")
     end
-    out_file = File.new("parsed/docs/" + i.to_s, "w")
+    new_path = File.join(File.dirname(__FILE__), "parsed/docs/")
+    out_file = File.new(new_path + i.to_s, "w")
     out_file.puts(m)
     out_file.close
     i = i+1
@@ -26,7 +27,8 @@ docs.each do |doc|
     if !m.nil?
         m = m.gsub(".W ","").gsub("-"," ").gsub("'s","").gsub(". ","").gsub("*", "").gsub("?", "")
     end
-    out_file = File.new("parsed/query/" + i.to_s, "w")
+    new_path = File.join(File.dirname(__FILE__), "parsed/query/")
+    out_file = File.new(new_path + i.to_s, "w")
     out_file.puts(m)
     out_file.close
     i = i+1
@@ -41,7 +43,8 @@ File.open(docs_path).each do |line|
   for i in 1..3
     a = a + " " + line[i].to_s
   end
-  open('parsed_answer', 'a') { |f|
+  new_path = new_path = File.join(File.dirname(__FILE__), 'parsed_answer')
+  open(new_path, 'a') { |f|
     f.puts a
   }
 end
