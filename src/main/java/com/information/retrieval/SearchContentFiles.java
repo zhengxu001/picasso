@@ -124,7 +124,7 @@ public class SearchContentFiles {
 
             final String current_dir = System.getProperty("user.dir");
             BufferedWriter writer = new BufferedWriter(new FileWriter(current_dir + "/target/classes/cran/test_results", true));
-            for (int i = start; i<end; i++) {
+            for (int i = start; i<hits.length; i++) {
                 if (raw) {
                     System.out.println("hit length" + hits.length);
                     System.out.println(i +" --- doc number=" + hits[i].doc + " scores=" + hits[i].score);
