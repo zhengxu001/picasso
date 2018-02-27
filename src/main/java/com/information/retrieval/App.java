@@ -1,9 +1,5 @@
 package com.information.retrieval;
 
-import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.FSDirectory;
-
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
@@ -12,8 +8,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import static com.information.retrieval.Config.DocumentPath;
-
 /**
  * Hello world!
  *
@@ -21,7 +15,8 @@ import static com.information.retrieval.Config.DocumentPath;
 public class App {
     public static void main(String[] args) throws Exception {
         final String current_dir = System.getProperty("user.dir");
-        IndexFiles.main(current_dir + "/target/classes/cran/index", current_dir+ "/target/classes/cran/parsed/docs");
+        IndexContentFiles.main(current_dir + "/target/classes/cran/index", current_dir+ "/target/classes/cran/parsed/docs");
+//        IndexContentFiles.main(current_dir + "/target/classes/cran/index_title", current_dir+ "/target/classes/cran/parsed/title");
         Path query_path = Paths.get(current_dir + "/target/classes/cran/parsed/query");
         List<Path> r = new ArrayList<>();
         if (Files.isDirectory(query_path)) {
@@ -42,9 +37,15 @@ public class App {
         int i = 0;
         for(Path s:r){
             String content = new String(Files.readAllBytes(s), StandardCharsets.UTF_8);
-            SearchFiles.main(content, i);
+            SearchContentFiles.main(content, i, "/target/classes/cran/index/");
             i = i+1;
         }
+//        int j = 0;
+//        for(Path s:r){
+//            String content = new String(Files.readAllBytes(s), StandardCharsets.UTF_8);
+//            SearchContentFiles.main(content, j, "/target/classes/cran/index_title/");
+//            j = j+1;
+//        }
     }
 }
 

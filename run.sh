@@ -8,5 +8,5 @@ results="$PWD/target/classes/cran/test_results"
 cd "trec_eval"
 evaluate="./trec_eval $answer $results"
 eval $evaluate
-deleteAnswer="rm $answer && rm $results"
-eval $deleteAnswer
+#deleteAnswer="rm $answer && rm $results"
+#eval $deleteAnswer
