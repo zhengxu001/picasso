@@ -1,7 +1,7 @@
-com/information/retrieval/IndexFiles.class
 com/information/retrieval/Parser.class
+com/information/retrieval/IndexContentFiles.class
 com/information/retrieval/Config.class
-com/information/retrieval/IndexFiles$1.class
-com/information/retrieval/SearchFiles.class
+com/information/retrieval/IndexContentFiles$1.class
+com/information/retrieval/SearchContentFiles.class
 com/information/retrieval/App$1.class
 com/information/retrieval/App.class
