@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad6d35f9-7643-43f2-9215-e586c8d42f23" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parsed/0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parsed/answer/0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parsed/docs/0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parsed/query/0.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/parsed/0.txt" afterPath="$PROJECT_DIR$/src/main/resources/cran/parsed/0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/parsed/answer/0.txt" afterPath="$PROJECT_DIR$/src/main/resources/cran/parsed/docs/0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/parsed/docs/0.txt" afterPath="$PROJECT_DIR$/src/main/resources/cran/parsed/index/0" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/parsed/query/0.txt" afterPath="$PROJECT_DIR$/src/main/resources/cran/parsed/query/0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/information/retrieval/SearchContentFiles.class" afterPath="$PROJECT_DIR$/target/classes/com/information/retrieval/SearchContentFiles.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-picasso-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-picasso-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/picasso-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/picasso-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/information/retrieval/SearchContentFiles.java" afterPath="$PROJECT_DIR$/src/main/java/com/information/retrieval/SearchContentFiles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.information.retrieval.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.information.retrieval.AppTest.txt" />
-    </list>
+    <list default="true" id="ad6d35f9-7643-43f2-9215-e586c8d42f23" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -598,7 +581,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47932000" />
+    <option name="totallyTimeSpent" value="48413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

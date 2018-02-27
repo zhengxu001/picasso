@@ -1,7 +1,6 @@
 ruby split_document.rb
-java -jar /Users/zen/picasso/target/picasso-1.0-SNAPSHOT.jar
-
 PWD=$(pwd)
+java -jar "$PWD/target/picasso-1.0-SNAPSHOT.jar"
 answer="$PWD/QRelsCorrectedforTRECeval"
 results="$PWD/target/classes/cran/test_results"
 cd "trec_eval"
