@@ -27,7 +27,7 @@ public class SearchContentFiles {
     private SearchContentFiles() {}
     public static void main(String q, Integer qid, String index_path) throws Exception {
         final String current_dir = System.getProperty("user.dir");
-        String index = current_dir + index_path;
+        String index = index_path;
         String field = "contents";
         String queries = null;
         int repeat = 1;
@@ -126,8 +126,7 @@ public class SearchContentFiles {
             BufferedWriter writer = new BufferedWriter(new FileWriter(current_dir + "/target/classes/cran/test_results", true));
             for (int i = start; i<hits.length; i++) {
                 if (raw) {
-                    System.out.println("hit length" + hits.length);
-                    System.out.println(i +" --- doc number=" + hits[i].doc + " scores=" + hits[i].score);
+                    System.out.println("doc number=" + hits[i].doc + " scores=" + hits[i].score);
                     int rank = i+1;
                     writer.append(qid + " Q0 " + hits[i].doc + " " + rank + " " + hits[i].score + " STANDARD");
                     if(qid!=0){
